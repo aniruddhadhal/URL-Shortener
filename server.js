@@ -20,10 +20,7 @@ app.use(morgan("dev"));
 app.use('/', userRoute);
 app.use('/', urlRoute);
 
-app.get('/', (req, res) => {
-    const { data } = req.body;
-    res.send(`hello ${data}`)
-})
+
 
 
 // PORT 
